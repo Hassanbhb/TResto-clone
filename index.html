@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-poppins">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#e54750",
+              secondary: "#e54750",
+              lightred: "#c43047",
+              black: "#444",
+            },
+            backgroundImage: {
+              hero: "url('./assets/cover.jpg')",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>TResto</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <div id="top-header" class="top-header bg-lightred p-1">
+      <div class="flex items-center justify-center gap-4 py-1 mx-5">
+        <img
+          src="./assets/favicon-32x32.png"
+          class="w-8 border-4 border-white rounded-lg"
+          alt="icon"
+        />
+        <div>
+          <p class="text-white text-sm font-bold">Télécharger notre Appli</p>
+          <p class="text-xs text-white">
+            Recevez des notifications pour votre commande
+          </p>
+        </div>
+        <a
+          href="#"
+          class="bg-white py-2 px-3 text-xs text-primary font-semibold rounded-md"
+        >
+          Installer
+        </a>
+        <div class="header_close_btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-3 fill-white"
+            viewBox="0 0 384 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="bg-lightred p-1">
+      <p class="text-center text-white text-sm">
+        10% de reduction 21 au 31 septembre 2023
+      </p>
+    </div>
+    <header class="px-6 py-3">
+      <div class="flex justify-between items-center max-w-7xl mx-auto">
+        <a class="block text-teal-600" href="#">
+          <picture class="">
+            <source srcset="./assets/logo_tresto.svg" />
+            <img
+              class="w-32"
+              loading="lazy"
+              src="./assets/logo_tresto.svg"
+              alt="logo"
+            />
+          </picture>
+        </a>
+        <a
+          href="#"
+          class="px-6 py-2 hover:text-white font-semibold border rounded-full hover:bg-primary .transition-all duration-300"
+        >
+          Connexion
+        </a>
+      </div>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section>
+        <div
+          class="h-[320px] md:h-[450px] bg-hero bg-center bg-cover bg-neutral-500 bg-blend-multiply py-12 px-4"
+        >
+          <div class="max-w-7xl mx-auto h-full">
+            <div
+              class="flex flex-col justify-end items-center md:items-start h-full"
+            >
+              <picture class="w-16">
+                <img
+                  class="max-w-full rounded-full border-4 border-white"
+                  loading="lazy"
+                  src="./assets/favicon-32x32.png"
+                  alt="x logo"
+                />
+              </picture>
+
+              <div class="text-white">
+                <h1 class="font-bold text-center md:text-left text-4xl">x</h1>
+                <div class="flex flex-col gap-1">
+                  <a
+                    href="https://maps.google.com/maps?q="
+                    class="underline underline-offset-4 font-semibold text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Obtenir des directions <i class="fa fa-chevron-right"></i>
+                  </a>
+
+                  <a class="font-light" href="tel:060000000">
+                    <i class="fa fa-phone"></i>
+                    Appeler le restaurant
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- drinks menu -->
+      <div class="bg-white sticky top-0 z-40 shadow-md">
+        <div
+          class="px-4 py-4 flex items-center gap-2 text-sm overflow-x-auto max-w-7xl mx-auto"
+        >
+          <a
+            href="#cafe"
+            class="bg-gray-100 px-4 py-2 rounded-full text-nowrap hover:text-primary transition-all duration-300"
+            >CAFE</a
+          >
+          <a
+            href="#iceCoffee"
+            class="bg-gray-100 px-4 py-2 rounded-full text-nowrap hover:text-primary transition-all duration-300"
+            >ICE COFFEE</a
+          >
+          <a
+            href="#the"
+            class="bg-gray-100 px-4 py-2 rounded-full text-nowrap hover:text-primary transition-all duration-300"
+            >THE</a
+          >
+          <a
+            href="#frappuccino"
+            class="bg-gray-100 px-4 py-2 rounded-full text-nowrap hover:text-primary transition-all duration-300"
+            >FRAPPUCCINO</a
+          >
+          <a
+            href="#milkshake"
+            class="bg-gray-100 px-4 py-2 rounded-full text-nowrap hover:text-primary transition-all duration-300"
+            >MILKSHAKE</a
+          >
+        </div>
+      </div>
+      <!-- cards section -->
+      <section class="pt-3 h-full bg-neutral-100">
+        <div class="md:max-w-7xl mx-auto md:grid md:grid-cols-8 md:gap-5">
+          <div class="md:col-span-8 lg:col-span-8 xl:col-span-6">
+            <div id="cafe" class="pt-2 max-w-5xl mx-auto">
+              <h3
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 lg:top-22 z-30 bg-neutral-100"
+              >
+                CAFÉ
+              </h3>
+              <hr class="my-4" />
+              <div class="mt-3 px-3 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <a
+                  href="#"
+                  class="flex relative justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm "
+                    >
+                      1. Doppio
+                    </p>
+                    <p class="flex-grow text-xs py-3 md:pt-0 text-neutral-400">
+                      Double expresso
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">
+                      20.00 Dhs
+                      <span
+                        class="font-semibold text-xs font-light text-neutral-400 line-through"
+                        >25.00 Dhs</span
+                      >
+                      <span
+                        class="inline-flex items-center justify-center rounded-full bg-[#fff5c6] px-2.5 py-0.5 text-gray-500/50"
+                      >
+                        <img src="./assets/reward.png" alt="star" class="w-4" />
+                        <span class="whitespace-nowrap text-sm">2 pts</span>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="absolute -top-2 right-0">
+                    <svg
+                      class="drop-shadow-md"
+                      viewBox="0 0 24 24"
+                      fill="#ffb232"
+                      width="42"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#FFF"
+                        d="M12 11.222l2.667 1.77 -.89-3.12 2.22-1.89 -2.667-.34 -1.34-2.67 -1.34 2.66 -2.667.33 2.22 1.88 -.89 3.11Z"
+                      ></path>
+                      <path
+                        d="M19 21.723V9.99v-1 -5c0-1.104-.9-2-2-2H7c-1.104 0-2 .89-2 2v5 1 11.72l7-4.58 7 4.57ZM8 7.99l2.667-.34 1.33-2.667 1.33 2.667 2.667.33 -2.23 1.88 .89 3.11 -2.667-1.78 -2.667 1.77 .89-3.12 -2.23-1.89Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      2. Chocoloat chaud
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Lait au chocoloat
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">12.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      2. Chocoloat chaud
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Lait au chocoloat
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">12.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      3. Caffé americano
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      4. Cappucino
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">15.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      5. Expresso
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Italian expressot
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">15.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      6. Latte
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Coffee, milk, espresso
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">15.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div id="iceCoffee" class="pt-9 max-w-5xl mx-auto">
+              <h3
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 lg:top-22 z-30 bg-neutral-100"
+              >
+                ICE COFFEE
+              </h3>
+              <hr class="my-4" />
+              <div class="mt-3 px-3 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      1. Affogato
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Expresso, Ice Cream
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">35.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      2. Iced mocha
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Cocoa, almond milk
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">35.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      3. Iced americano
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      The Iced Americano is a refreshing...
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">35.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      4. Iced cappuccino
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Coffe, milk and some vanilla ice cream
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">35.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div id="the" class="pt-9 max-w-5xl mx-auto">
+              <h3
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 lg:top-22 z-30 bg-neutral-100"
+              >
+                THÉ
+              </h3>
+              <hr class="my-4" />
+              <div class="mt-3 px-3 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      1. Çay
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Thé turc
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">20.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      2. Thé vert avec menthe
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Thé marocain traditionnel
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">20.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      3. Thé vert avec fleurs de jasmin
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Thé vert, fleurs de jasmine
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">25.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300  text-xs md:text-sm"
+                    >
+                      4. Thé noir orange et jasmine
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Thé noice, arome orange, fleurs de jasmine
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">30.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div id="frappuccino" class="pt-9 max-w-7xl mx-auto">
+              <h3
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 lg:top-22 z-30 bg-neutral-100"
+              >
+                FRAPPUCCINO
+              </h3>
+              <hr class="my-4" />
+              <div class="mt-3 px-3 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      1. Mocha Frappuccino
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Sauce MOCHA, café Frappuccino Roast...
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">35.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      2. Caramel Frappuccino
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Sirop de caramel, café, lait et glace
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">35.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      3. Chocolat Frappuccino
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Sirop de chocolat, café, lait et glace
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">30.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      4. Vanille Frappuccino
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Sirop de vanille, café, lait et glace
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">30.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div id="milkshake" class="pt-9 max-w-7xl mx-auto">
+              <h3
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 lg:top-22 z-30 bg-neutral-100"
+              >
+                MILKSHAKE
+              </h3>
+              <hr class="my-4" />
+              <div class="mt-3 px-3 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      1. Vanilla
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Vanilla ice cream, vanilla syrup
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">30.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      2. Chocolate
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Vanilla ice cream, chocolote syrup
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">30.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      3. Strawberry
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Vanilla ice cream, strawbery
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">35.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between py-5 px-3 bg-white rounded-lg border border-neutral-200 group hover:shadow-[10px_20px_40px_0px_#00000024] transition-all duration-500"
+                >
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="font-semibold group-hover:text-primary transition-all duration-300 text-xs md:text-sm"
+                    >
+                      4. Coffee
+                    </p>
+                    <p class="flex-grow text-sm py-3 md:pt-0 text-neutral-400">
+                      Vanilla ice cream, coffee syrup, espresso
+                    </p>
+                    <p class="flex gap-3 items-center text-sm">30.00 Dhs</p>
+                  </div>
+                  <picture>
+                    <source
+                      class="lazy"
+                      srcset="./assets/no-image.jpeg"
+                      media="(min-width: 569px)"
+                    />
+                    <img
+                      loading="lazy"
+                      class="w-24 rounded-lg"
+                      src="./assets/no-image.jpeg"
+                      alt="CAFÉ Doppio - x "
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- right section -->
+          <div class="md:col-span-8 lg:col-span-8 xl:col-span-2 p-3">
+            <div
+              class="hidden md:block mt-16 bg-white h-fit sticky top-36 z-30 rounded-lg border border-neutral-200 md:b"
+            >
+              <div class="py-3 pt-3">
+                <div class="border-b border-neutral-100">
+                  <h3 class="font-semibold text-center">
+                    Résumé de la commande
+                  </h3>
+                  <p class="text-sm font-semibold text-center mb-3">
+                    Commande minimum 0.00 Dhs
+                  </p>
+                </div>
+                <div class="bg-red-50 py-4 mx-5 rounded-full mt-8 mb-4">
+                  <p class="text-xs text-center px-1 text-red-600 font-light">
+                    Ajouter quelque chose a la commander!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Horaires section -->
+            <div
+              class="hidden mt-8 bg-white h-fit sticky top-[23rem] z-30 rounded-md md:block md:col-span-2 border border-neutral-200"
+            >
+              <div class="pt-3">
+                <h3
+                  class="font-semibold pb-4 text-center border-b border-neutral-100"
+                >
+                  Horaires d'ouvertures
+                </h3>
+                <div class="text-neutral-500 p-5">
+                  <div class="flex justify-between text-sm mb-1">
+                    <p>Lundi</p>
+                    <span>09:00 - 23:00</span>
+                  </div>
+                  <div class="flex justify-between text-sm mb-1">
+                    <p>Mardi</p>
+                    <span>09:00 - 23:00</span>
+                  </div>
+                  <div class="flex justify-between text-sm mb-1">
+                    <p>Mercredi</p>
+                    <span>09:00 - 23:00</span>
+                  </div>
+                  <div class="flex justify-between text-sm mb-1">
+                    <p>Jeudi</p>
+                    <span>09:00 - 23:00</span>
+                  </div>
+                  <div class="flex justify-between text-sm mb-1">
+                    <p>Vendredi</p>
+                    <span>09:00 - 23:00</span>
+                  </div>
+                  <div class="flex justify-between text-sm mb-1">
+                    <p>Samedi</p>
+                    <span>09:00 - 23:00</span>
+                  </div>
+                  <div class="flex justify-between text-sm mb-1">
+                    <p>Dimanche</p>
+                    <span>09:00 - 23:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-16 h-fit sticky top-[41rem] z-30 rounded-md md:block md:col-span-2"
+            >
+              <p class="flex gap-5 text-xs font-semibold justify-center">
+                Propuisé par <img src="./assets/logo_tresto.svg" class="w-20" />
+              </p>
+              <a
+                href="#"
+                class="block text-center underline text-sm font-light text-neutral-500"
+                >add yout Restaurant</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="sticky bottom-16 lg:bottom-6 z-50 flex justify-end mx-4">
+          <a href="#top-header" class="bg-gray-700 py-3 px-4 rounded-full">
+            <i class="fa fa-chevron-up fa-sm" style="color: #fff"></i>
+          </a>
+        </div>
+        <div class="lg:hidden sticky bottom-0 z-40 bg-white p-3">
+          <button
+            class="resume-btn text-center bg-gradient-to-r from-orange-400 to-red-600 text-white w-full p-2 rounded-lg font-semibold text-sm"
+          >
+            Résumé de la commande
+          </button>
+        </div>
+      </section>
+      <!-- side menu -->
+      <div
+        class="side-menu fixed hidden left-0 top-0 h-full bg-neutral-700 bg-opacity-90 z-50 w-full"
+      >
+        <div
+          id="close_menu"
+          class="absolute cursor-pointer flex justify-center items-center rounded-full h-12 bg-white w-12 top-5 right-5 z-60 shadow-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-3"
+            viewBox="0 0 384 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </div>
+        <div
+          class="pt-16 bg-white w-96 h-full opacity-100 z-30 border border-neutral-200 md:block"
+        >
+          <div class="pb-5 pt-3">
+            <div class="border-b border-neutral-100">
+              <h3 class="font-semibold text-center">Résumé de la commande</h3>
+              <p class="text-sm font-semibold text-center mb-3">
+                Commande minimum 0.00 Dhs
+              </p>
+            </div>
+            <div class="bg-red-50 py-4 mx-5 rounded-full mt-8 mb-4">
+              <p class="text-xs text-center px-1 text-red-600 font-light">
+                Ajouter quelque chose a la commander!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./menu.js"></script>
+  </body>
+</html>
