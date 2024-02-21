@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth font-poppins">
+<html lang="en" class="scroll-smooth font-poppins text-black">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -140,7 +140,7 @@
       <!-- drinks menu -->
       <div class="bg-white sticky top-0 z-40 shadow-md">
         <div
-          class="px-4 py-4 flex items-center whitespace-nowrap gap-2 text-sm overflow-x-auto max-w-7xl mx-auto"
+          class="px-4 py-4 flex items-center whitespace-nowrap gap-2 text-sm overflow-x-auto max-w-7xl mx-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
         >
           <a
             href="#cafe"
@@ -168,6 +168,9 @@
             >MILKSHAKE</a
           >
         </div>
+        <div class="md:hidden absolute top-0 right-0 flex items-center justify-center h-full w-12 bg-gradient-to-l from-white from-50%">
+          <svg xmlns="http://www.w3.org/2000/svg" class="fill-primary" height="24" width="12" viewBox="0 0 256 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+        </div>
       </div>
       <!-- cards section -->
       <section class="pt-3 h-full bg-neutral-100">
@@ -175,7 +178,7 @@
           <div class="md:col-span-8 lg:col-span-8 xl:col-span-6">
             <div id="cafe" class="pt-2 max-w-5xl mx-auto">
               <h3
-                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-20 md:top-16 z-30 bg-neutral-100"
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 z-30 bg-neutral-100"
               >
                 CAFÉ
               </h3>
@@ -388,7 +391,7 @@
             </div>
             <div id="iceCoffee" class="pt-9 max-w-5xl mx-auto">
               <h3
-                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-20 md:top-16 z-30 bg-neutral-100"
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 z-30 bg-neutral-100"
               >
                 ICE COFFEE
               </h3>
@@ -514,7 +517,7 @@
             </div>
             <div id="the" class="pt-9 max-w-5xl mx-auto">
               <h3
-                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-20 md:top-16 z-30 bg-neutral-100"
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 z-30 bg-neutral-100"
               >
                 THÉ
               </h3>
@@ -640,7 +643,7 @@
             </div>
             <div id="frappuccino" class="pt-9 max-w-7xl mx-auto">
               <h3
-                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-20 md:top-16 z-30 bg-neutral-100"
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 z-30 bg-neutral-100"
               >
                 FRAPPUCCINO
               </h3>
@@ -766,7 +769,7 @@
             </div>
             <div id="milkshake" class="pt-9 max-w-7xl mx-auto">
               <h3
-                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-20 md:top-16 z-30 bg-neutral-100"
+                class="font-bold text-xl md:text-2xl text-black px-3 py-5 sticky top-16 z-30 bg-neutral-100"
               >
                 MILKSHAKE
               </h3>
@@ -969,8 +972,8 @@
             </div>
           </div>
         </div>
-        <div class="sticky bottom-16 lg:bottom-6 z-50 flex justify-end mx-4">
-          <a href="#top-header" class="bg-gray-700 py-3 px-4 rounded-full">
+        <div class="sticky bottom-[70px] lg:bottom-6 z-50 flex justify-end mx-4">
+          <a href="#top-header" class="bg-gray-700 opacity-75 py-2 px-3 rounded-full">
             <i class="fa fa-chevron-up fa-sm" style="color: #fff"></i>
           </a>
         </div>
